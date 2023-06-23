@@ -72,6 +72,7 @@
 }
 .section-1 img{
     height: 300px;
+    padding-left: 15%;
 }
 .section-1 .t-button{
     padding-left: 200px;
@@ -188,8 +189,12 @@ span{
     border-radius: 8px;
     position: relative;
     margin: 10px 30px;
-    background-color: #a09bf7;
-    
+    background-color: #a09bf7; 
+}
+.product-box a{
+    color: rgb(207, 220, 248);
+    font-size: 1.1rem;
+    text-decoration: none;
 }
 .product-box:hover{
     box-shadow: 0px 0px 10px 5px rgb(202, 200, 200);
@@ -214,12 +219,16 @@ span{
     border-radius: 5px;
     background: linear-gradient(120deg, #6b60ec 20%, #a166f4);
     color: wheat;
-    display: none;
     cursor: pointer;
     animation: fade 1s;
-    
+    display: none;
 }
 .product-box:hover .buy-btn{
     display: flex;
+    opacity: 1;
 
+}
+.product-box:hover :last-child{
+    color: white;
+    transition: all ease 1s;
 }
