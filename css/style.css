@@ -112,6 +112,7 @@ span{
     border-radius: 20px;
     border: transparent !important;
     box-shadow: 0px 0px 10px 2px blue;
+    transition: 1s;
 
 }
 .section-1 .t-button .btn:hover{
@@ -147,10 +148,11 @@ span{
 }
 
 /* Product Section */
+
 .product-section{
     width: 85%;
     background-color: rgb(255, 255, 255);
-    box-shadow: 0px 0px 10px 5px rgb(219, 219, 219);
+    box-shadow: 0px 0px 10px 5px rgb(245, 244, 244);
     margin: 30px auto;
     display: flex;
     align-items: center;
@@ -180,6 +182,7 @@ span{
     width: 100%;
 }
 .product-box{
+    position: relative;
     width: 253px;
     height: 330px;
     display: flex;
@@ -187,19 +190,20 @@ span{
     align-items: center;
     flex-direction: column;
     border-radius: 8px;
-    position: relative;
     margin: 10px 30px;
-    background-color: #a09bf7; 
+    background-color: #f1f1ff; 
 }
 .product-box a{
-    color: rgb(207, 220, 248);
+    color: rgb(96, 97, 97);
     font-size: 1.1rem;
     text-decoration: none;
 }
 .product-box:hover{
     box-shadow: 0px 0px 10px 5px rgb(202, 200, 200);
     background-color: white;
-
+}
+.product-box p{
+    color: #575758;
 }
 .product-box img{
     height: 180px;
@@ -220,15 +224,137 @@ span{
     background: linear-gradient(120deg, #6b60ec 20%, #a166f4);
     color: wheat;
     cursor: pointer;
-    animation: fade 1s;
-    display: none;
+    transform: 0.5s;
+    opacity: 0;
 }
 .product-box:hover .buy-btn{
     display: flex;
     opacity: 1;
-
+    bottom: 0;
 }
 .product-box:hover :last-child{
     color: white;
     transition: all ease 1s;
 }
+/* This is about  */
+.about{
+    width: 85%;
+    margin: 30px auto;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* box-shadow: 0px 0px 10px 5px #d9dbdb; */
+    padding: 30px;
+    margin-bottom: 150px !important;
+
+}
+.text-box{
+    width: 45%;
+    height: 400px;
+    padding-top: 80px ;
+
+}
+.text-box h1{
+    color: #6b60ec;
+    font-weight: 700;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    margin: 0;
+    text-transform: uppercase;
+    
+}
+.text-box h4{
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 10px 0px;
+    color: #333333;
+    font-family: myriad pro; 
+}
+.text-box p{
+    text-align: justify;
+    color: #bdbdbd;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    font-family: myriad pro;
+
+}
+.image-box{
+    width: 45%;
+    height: 400px;
+}
+.image-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Notifaction Section */
+.Notification{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.Notification h1{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1d1d1d;
+}
+.notification-input{
+    width: 500px;
+    height: 60px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 2px 2px 10px 2px rgb(224, 223, 223);
+    padding: 5px 20px;
+    margin-top: 20px;
+
+}
+.notification-input input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background-color: transparent;
+    padding-right: 10px;
+}
+.notification-input button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 130px;
+    background-color: #202020;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font: 300;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.notification-input button:hover{
+    background-color: #6f67f8;
+    transform: all ease 0.5s;
+}
+
+/* this is footer */
+footer{
+    background-color: rgb(36, 35, 35);
+    padding: 20px;
+}
+footer p{
+    color: white;
+    text-align: center;
